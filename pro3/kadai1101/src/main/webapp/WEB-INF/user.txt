@@ -1,0 +1,5 @@
+id01,pass01,青山一郎,aoyamai.jpg
+id02,pass02,香川あい,kagawaa.jpg
+id03,pass03,佐々木健一,sasakik.jpg
+id04,pass04,田所翔太,tadokoros.jpg
+id05,pass05,中山今日子,nakayamak.jpg
