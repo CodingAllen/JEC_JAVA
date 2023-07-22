@@ -1,11 +1,5 @@
-SCRIPT_AREA_BORDER=\#fbd153 | null | false | false | false | false
 commentBorder=\#4e8f00 | null | false | false | false | false
 commentText=\#4e8f00 | null | false | false | false | false
 eclipse.preferences.version=1
 newFileTemplateName=\u65B0\u898F JSP \u30D5\u30A1\u30A4\u30EB (html 5)
-overriddenByCSS=,SCRIPT_AREA_BORDER,tagAttributeEquals,tagAttributeName,tagName,tagBorder,
-tagAttributeEquals=\#52ca11 | null | false | false | false | false
-tagAttributeName=\#a7ec21 | null | false | false | false | false
 tagAttributeValue=\#0080ff | null | false | false | false | false
-tagBorder=\#808080 | null | false | false | false | false
-tagName=\#03a8d8 | null | true | false | false | false
