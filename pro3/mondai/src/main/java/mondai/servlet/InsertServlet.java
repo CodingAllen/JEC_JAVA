@@ -54,5 +54,16 @@ public class InsertServlet extends HttpServlet {
         dispatcher.forward(request, response);
 
     }
+    /**
+     *  String deadline = request.getParameter("deadline");
+        String subject = request.getParameter("subject");
+        int priority = Integer.parseInt(request.getParameter("priority"));
+        int state = Integer.parseInt(request.getParameter("state"));
+
+        todoDAO.insert(deadline, subject, priority, state);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/todo");
+        dispatcher.forward(request, response);
+     * */
 }
 

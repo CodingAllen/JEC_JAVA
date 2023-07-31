@@ -64,6 +64,25 @@ public class ToDoDAO {
             e.printStackTrace();
         }
     }
+    /**
+     * public void update(int no, int state) {
+        String sql = "UPDATE todos SET state = ? WHERE no = ?";
+        
+        try (Connection conn = DriverManager.getConnection("jdbc:your_jdbc_url");
+            PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            
+            pstmt.setInt(1, state);
+            pstmt.setInt(2, no);
+
+            pstmt.executeUpdate();
+
+        } catch (SQLException ex) {
+            // Handle exceptions
+        }
+    }
+     */
+     
+    //insert(String deadline)
 
     public void insert(ToDo todo) {
         String sql = "INSERT INTO todo (deadline, subject, priority, state) VALUES (?, ?, ?, ?)"; // "no" is auto-increment, no need to insert it manually
@@ -87,4 +106,24 @@ public class ToDoDAO {
             e.printStackTrace();
         }
     }
+    /**
+     * public void insert(String deadline, String subject, int priority, int state) {
+        String sql = "INSERT INTO todos(deadline, subject, priority, state) VALUES (?, ?, ?, ?)";
+        
+        try (Connection conn = DriverManager.getConnection("jdbc:your_jdbc_url");
+            PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            
+            pstmt.setString(1, deadline);
+            pstmt.setString(2, subject);
+            pstmt.setInt(3, priority);
+            pstmt.setInt(4, state);
+
+            pstmt.executeUpdate();
+
+        } catch (SQLException ex) {
+            // Handle exceptions
+        }
+    }
+}
+     * */
 }

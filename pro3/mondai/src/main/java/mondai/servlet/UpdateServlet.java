@@ -35,6 +35,15 @@ public class UpdateServlet extends HttpServlet {
         dispatcher.forward(request, response);
 
 	}
+	/**
+	 * int no = Integer.parseInt(request.getParameter("no"));
+        int state = Integer.parseInt(request.getParameter("state"));
+
+        todoDAO.update(no, state);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/todo");
+        dispatcher.forward(request, response);
+	 * */
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
